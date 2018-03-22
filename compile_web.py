@@ -19,7 +19,7 @@ template_data = {}
 os.makedirs(outpath, exist_ok=True)
 
 
-for page in glob('pagesrc/*.html'):
+for page in glob('pages/*.html'):
     template = env.get_template(page)
 
     with open(os.path.join(outpath, os.path.basename(page)), 'wt') as html_out:
