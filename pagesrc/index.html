@@ -1,0 +1,168 @@
+{% extends "templates/basic.html" %}
+{% set active_page = "About" %}
+
+{% block content %}
+
+    <!-- Carousel ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+	{% for i in range(images | count) %}
+	<li data-target="#myCarousel" data-slide-to="{{i}}"{% if i==0 %} class="active"{% endif %}></li>
+	{% endfor %}
+      </ol>
+      <div class="carousel-inner">
+	{% for i in images %}
+        <div class="item{% if i==images[0] %} active{% endif %}">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:slide {{i}}" alt="loading image">
+          <img src="{{i}}" alt="nice pictures of Boston and the conference venue" />
+        </div>
+	{% endfor %}
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+    <div class="container clearfix mb-20">
+
+      {% include "templates/globalmessage.html" ignore missing %}
+      {% include "templates/timeline.html" ignore missing %}
+      <h2><span>What is "Cool Stars"?</span></h2>
+      <p>
+	The Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun ("Cool Stars") has been running for 37 years. The first workshop was held in Cambridge, Massachusetts in 1980.
+	Since then, Cool Stars has been held largely biennially, alternating between North America and Europe, where approximately 400 international experts in Low-Mass Stars, Solar Physics, and Exoplanets meet to exchange ideas in a cross-disciplinary and friendly environment.
+      </p>
+      <p>
+	Four institutions in the Boston area (Boston University, Harvard-Smithsonian Center for Astrophysics (Harvard College Observatory / Smithsonian Astrophysical Observatory), MIT, and University of Massachusetts Lowell) jointly organize Cool Stars 20 which will be held at Boston University in Boston/Cambridge, MA from July 29 to August 03, 2018.
+	</p>
+       
+
+      <h2><span>SOC</span></h2>
+      <div class="row">
+	<div class="c6">
+	  <ul class="listing">
+	    {% for m in soc[:12] %}
+	    <li>{{m['Full Name']}} - {{m['Institute']}}</li>
+	    {% endfor %}
+	  </ul>
+	</div> 
+	<div class="c6">
+	  <ul class="listing">
+	    {% for m in soc[12:] %}
+	    <li>{{m['Full Name']}} - {{m['Institute']}}</li>
+	    {% endfor %}
+	  </ul>
+	</div> 
+      </div>
+      <div class="clearfix"></div>
+      <h2><span>LOC</span></h2>
+       <div class="c12 row">
+	 <ul class="listing">
+	   {% for m in loc %}
+	   <li>{{m['name']}} - {{m['inst']}}</li>
+	   {% endfor %}
+	 </ul>
+       </div>
+       <h2><span>Sponsoring Institutions</span></h2>
+       <div class="row clearfix sponsor-logo">
+         <div class="c2 img">
+	   <a href="https://www.cfa.harvard.edu">
+             <img src="images/SAO-squarelogo.png" alt="SAO logo">
+	   </a>
+         </div>
+         <div class="c2 img">
+	   <a href="https://www.cfa.harvard.edu">
+             <img src="images/Harvard_University_logo.svg" alt="Harvard logo">
+	   </a>
+         </div>
+	 <div class="c3 img">
+	   <a href="https://www.bu.edu/">
+             <img src="images/Boston_University.png" alt="Boston University logo">
+	   </a>
+         </div>
+	 <div class="c3 img">
+	   <a href="https://www.mit.edu/">
+             <img src="images/MIT-logo.png" alt="MIT logo">
+	   </a>
+         </div>
+	 <div class="c2 img">
+	   <a href="https://www.uml.edu/">
+             <img src="images/uml_logo.jpeg" alt="UMAss Lowell logo">
+	   </a>
+         </div>
+	 
+
+	 
+      </div>
+
+       <h2><span>Code of Conduct</span></h2>
+       <div class="c12 row">
+
+       <p>The Cool Stars 20 organizers are committed to making this meeting productive and enjoyable for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, ethnicity, nationality, or religion. We will not tolerate harassment of participants in any form. Please follow these guidelines:</p>
+
+	  <ul class="listing">
+	    <li>Behave professionally. Harassment and sexist, racist, or exclusionary comments or jokes are not appropriate. Harassment includes sustained disruption of talks or other events, inappropriate or unwelcome physical contact, sexual attention or innuendo, deliberate intimidation, stalking, and photography or recording of an individual without consent. It also includes offensive comments related to gender, sexual orientation, age, disability, physical appearance, body size, ethnicity, or religion.</li>
+	    <li>All communication should be appropriate for a professional audience of people from many different backgrounds. Sexual language and imagery is not appropriate.</li>
+	    <li>Be kind to others. Do not insult or put down other attendees.</li>
+	   </ul>
+
+	  <p>Participants asked to stop any inappropriate behaviour are expected to comply immediately. Attendees violating these rules may be asked to leave the event at the sole discretion of the organizers without a refund of any charge.  The full <a href="docs/CS20_code_of_conduct.pdf">Cool Stars 20 Code of Conduct</a> is available as pdf.</p>
+
+       <p>Any participant who wishes to report a violation of this policy can do so anonymously via <a href="https://goo.gl/forms/UXtcpH5kwjskcvU52">google web form</a> or can contact LOC representatives David Principe or Julie Skinner (see <a href="docs/CS20_code_of_conduct.pdf">CS 20 Code of Conduct</a> for contact information).</p>
+
+       <p>This code of conduct was originally designed for an astronomy conference in London, adapted by Andrew Pontzen and Hiranya Peiris from a document by Software Carpentry, which itself derives from original Creative Commons documents by PyCon and Geek Feminism.</p>
+
+<p><em>If you prefer to speak to someone who is not affiliated with the CS20 conference organizers, we encourage you to talk to <a href="http://www.astronomyallies.com/Astronomy_Allies/The_Allies.html">Astronomy Allies</a>. Several members of this group happen to attend the CS20 meeting.</em></p>
+
+
+       
+       </div>
+       <h2><span>Acknowledgements</span></h2>
+       <div class="c12 row">
+	 <ul class="listing">
+	   <li>Artwork: Kristin Ann Divona</li>
+	   <li>Website template design by Veselka for <a href="http://www.andreasviklund.com">andreasviklund.com</a> </li>
+	   <li>Website development on <a href="https://github.com/coolstars20/website">github</a>
+	 </ul>
+       </div>
+
+              <h2><span>Previous Meetings</span></h2>
+       <div class="c12 row">
+	 <ul class="listing">
+	   <li>CS 19 - <a href="http://coolstars19.com/">Uppsala, Sweden, June 2016</a></li>
+	   <li>CS 18 - <a href="http://www2.lowell.edu/workshops/coolstars18/">Flagstaff, AZ, USA, June 2014</a></li>
+	   <li>CS 17 - Barcelona, SPAIN, June 2012</li>
+	   <li>CS 16 - Seattle, WA, USA, August 2010</li>
+	   <li>CS 15 - <a href="http://star-www.st-andrews.ac.uk/coolstars15/">St Andrews, United Kingdom, July 2008</a></li>
+	   <li>CS 14 - <a href="https://irsa.ipac.caltech.edu/data/SPITZER/docs/spitzermission/reportsandproceedings/meetings/coolstars14/">Pasadena, CA, USA, November 2006</a></li>
+	   <li>CS 13 - Hamburg, Germany, July 2004</li>
+	   <li>CS 12 - Boulder, CO, USA, July 2001</li>
+	   <li>CS 11 - Tenerife, Spain, October 1999</li>
+	   <li>CS 10 - Cambridge, MA, USA, 1997</li>
+	   <li>CS 9 - Florence, Italy, 1995</li>
+	   <li>CS 8 - Athens, GA, USA, 1993</li>
+	   <li>CS 7 - Tucson, AZ, USA, 1991</li>
+	   <li>CS 6 - Seattle, WA, USA, 1989</li>
+	   <li>CS 5 - Boulder, CO, USA, 1987</li>
+	   <li>CS 4 - Santa Fe, NM, USA, 1985</li>
+	   <li>CS 3 - Cambridge, MA, USA, 1983</li>
+	   <li>CS 2 - Cambridge, MA, USA, 1981</li>
+	   <li>CS 1 - Cambridge, MA, USA, 1980</li>
+	 </ul>
+       </div> 
+
+       <h2><span>Website Privacy Policy</span></h2>
+       <div class="c12 row">
+	 <p>
+	   We (the Cool Stars organizing committee) collect personally identifiable information such as your name and home institution only when you specifically send them to us by filling out an abstract submission or registration form. Those forms (and the required payments) are hosted by third parties such a Google or the Smithsonian Institution. Please refer to their privacy statement for details on how they handle your information.
+	 </p>
+	 <p> This page is hosted on Github's servers. Please see <a href="https://help.github.com/articles/github-privacy-statement/">Github's privacy policy</a> for the information that they collect about site visitors. Please note that we (the CS20 LOC) do not have access to or control over their data.
+       </div>
+      <p>
+	We will use the information provided to us when submitting an abstract or registration form to organize the conference. Participant names and home institutions as well as accepted conference contributions will be made public. We will use your contact information to inform you about the status of your submission, conference registration, and other organizational matters related to the Cool Stars 20 conference. You can contact us by email at any time to request that we do not contact you any further.
+	</p>
+    </div>
+    
+
+{% endblock content %}

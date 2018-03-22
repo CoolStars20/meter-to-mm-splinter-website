@@ -1,0 +1,31 @@
+{% extends "templates/basic.html" %}
+{% set active_page = "Registration" %}
+
+{% block content %}
+
+    <div class="container clearfix mt-100 mb-20">
+         {% include "templates/globalmessage.html" ignore missing %}
+         {% include "templates/timeline.html" ignore missing %}
+      <h2><span>Registration</span></h2>
+      <div class="c12 row">
+        <p>Registration will open in the next few days (we were delayed by a
+        large snow storm in Boston). The registration fee will be about 475 $ for early registration.</p>
+        <p>Our facilities can support about 500 attendees. Based on the previous Cool Stars meetings, we expect that every interested astronomer should have a chance to join in, but the only guarantee is to register early. Subscribe to our announcement list to be informed when registration opens.<p>
+      </div>
+      <h2><span>Financial support</span></h2>
+	 <p> Limited financial support is available to allow students and other early career astronomers to attend CS20, if their institution cannot provide sufficient funds. The application form is available <a href="https://goo.gl/forms/qxVQHtTs8F7O86US2">here</a>. The deadline to submit the financial support application is <strong>March 14</strong>.
+	 </p>
+	 <p>For CS20 participants that are also attending the <a href="https://exoplanets.nasa.gov/exep/events/205/">ExoPAG meeting</a> meeting on July 29, travel support might also be available through the <a href="https://exoplanets.nasa.gov/exep/exopag/student-travel/">Exoplanet Travel Bureau</a>.
+	 </p>
+	 
+	 <h2><span>Subscribe to email annoucements</span></h2>
+	 <p>
+	 Until registration opens you can subscribe to our annoucement mailing list using the following form:
+	 </p>
+	 
+	{% include "templates/emailform.html" ignore missing %}
+
+      </div>  
+    </div>
+
+{% endblock content %}

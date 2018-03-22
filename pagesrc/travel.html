@@ -1,0 +1,114 @@
+{% extends "templates/basic.html" %}
+{% set active_page = "Logistics" %}
+
+{% block content %}
+
+<div class="container clearfix mt-100 mb-20">
+         {% include "templates/globalmessage.html" ignore missing %}
+
+  <h2><span>Conference Venue</span></h2>
+  <div class="row">
+    <div class="c4">
+      <p>George Sherman Union, 775 Commonwealth Avenue, Boston</p>
+
+      <p>The George Sherman Union of Boston University hosts the meeting. All talks, splinters session, and poster sessions take place on the second floor.
+      </p>
+      <p><small><a href="https://www.openstreetmap.org/?mlat=42.3509&amp;mlon=-71.1093#map=14/42.3509/-71.1093">(View Larger Map)</a></small></p>
+    </div>
+    <div class="container clearfix  mb-20">
+      <div class="c8">
+	<iframe height="350" width="100%" frameborder="0" src="https://render.githubusercontent.com/view/geojson?url=https://raw.githubusercontent.com/CoolStars20/CoolStars20.github.io/master/maps/GeorgeShermanUnion.geojson" title="Venue (blue) and other locations"></iframe>
+      </div>
+    </div>
+  </div>
+  <h2><span>Travel and getting around</span></h2>
+  <div class="c12 row">
+    <h3>Travel to Boston</h3>
+        <p>Logan Airport (IATA-code: BOS) is served by a large number of US and international airlines. Direct flight are offered to most major US and European airports. Several smaller airports exist in the Greater Boston area, but connecting from there to Boston is usually less convenient.
+	</p>
+      <h3>Transport to the Conference Venue</h3>
+
+	<p>Public transport in Boston is provided by the <a href="http://mbta.com">MBTA</a>. From the airport, the "Silver Line" is a bus leaving right outside the Terminal. (Travel starting with the Silver Line from the airport is free, a measure introduced to reduce congestion at the airport terminals.) Stay on the bus to the final stop (South Station) and transfer to the Red Line (inbound to Alewife) for two stops ("Park Street"). Change to a Green Line train outbound to "Boston College". (Note that the Green Line has several branches, so check the destination on the train.) The Green line stop "Boston University, Central" is a 2 min walk from the Conference Venue.</p>
+
+	<p>Both the <a href="http://mbta.com">MBTA</a> and <a href="https://maps.google.com">Google Maps</a> offer a journey planner that has up-to-date timetables for all train and bus services in Boston.
+	</p>
+
+    <p>A taxi from the airport costs about 30$ (15-20% tip are expected in the US). Taxis prefer cash, but also accept all major credit cards.</p>
+
+    <p>Popular US ride and ride-sharing apps like Uber and Lyft operate in Boston and will service (pick-up and drop-off) the Boston Logan Airport.  The fees are typically ~$25-35 for single rides but can fluctuate due to the demand at the time. The option to automatically share a ride with other Uber/Lyft users will significantly reduce the price.  In order to access these rides, you must install the app on your phone and have access to the internet.  Creating an account through the app and registering your credit card is required for service since the drivers will not take cash or credit.
+    </p>
+
+    <h3>Getting around in the city</h3>
+    <p>Public transport in Boston is provided by the <a href="http://mbta.com">MBTA</a> and Uber and Lyft are popular services, too. However, the center of Boston is relatively small with many parks and pedestrian-friendly streets, so simply walking is often the best option to get around.</p>
+
+    <p>In recent years, cycling has also become a lot more popular and many new bike lanes have been marked to increase safety, see <a href="https://www.google.com/maps/@42.3524676,-71.0871778,15z/data=!5m1!1e3">Google maps</a> for a map of bike routes. In particular, there is a very nice bike path along the Charles river. We want to point out two companies for providing bicycles:
+
+      <ul class="listing">
+	<li><a href="https://www.thehubway.com/how-it-works">Hubway</a>
+	  offers a bike share service for $20 per month (unfortunately,
+	  no weekly membership is available), which includes unlimited short
+	  trips (~30 minutes) during the membership period. There are two Hubway
+	  bike docks near/at BU. The bikes
+	  are not lightweight, though.</li>
+	<li><a href="http://www.urbanadventours.com/">Urban Adventures</a> offer a
+	  variety of bikes for rent that
+	  they will deliver to your hotel. They are more expensive (for their
+	  hybrid city bikes, the listed price is $40 for the first 24-hours and
+	  $25 for each additional day, Monday-Friday), but include helmets,
+	  locks, bike lights, and flat kits. They also offer city tours.</li>
+	</ul>
+    
+  </div>
+      <h2><span>Lodging / Hotels</span></h2>
+      <h3> Accommodation at Boston University </h3>
+      <div class="c12 row">
+        <p>We offer accommondation in  <a href="https://www.youtube.com/watch?v=0aWFonBEgE0"> BU student halls</a>, about 10 min on foot from the conference venue. The modern, air-conditioned high-rise was opened in 2010. Apartments have four single-occupancy bedrooms, two bathrooms, a kitchen (not stocked), and a living area. Beds come made with linen and bath towels, and basic amenities. There is a Gym in the building. Price: $85 per person per night. Optionally, breakfast is available in the dinning Hall at $8.35 per person per day.</p>
+	<p>Booking can be done together with the conference registration. Groups booking together can chose whom to share an apartment with on the registration form.
+	</p>
+	<h3>Hyatt Cambridge</h3>
+	<p>We reserved a block of rooms in
+	the <a href="https://cambridge.regency.hyatt.com/en/hotel/home.html">
+	Hyatt Regency Cambridge</a> hotel. This is located about 10 min on foot
+	from the conference venue, the hotel will also provide a bus
+	shuttle. Rooms are between 240 $ (+ tax) and 360 $ (+ tax) per
+	night. Book using <a href="https://aws.passkey.com/e/49549965">this
+	link</a> (valid until all rooms are reserved, but no later than July
+	16). Please contact <a href="mailto:jhumber@cfa.harvard.edu">Jenine
+	Humber (jhumber@cfa.harvard.edu)</a> with any problems.</p>
+
+	<h3>Residence Inn Marriott at Fenway</h3>
+	<p>
+	We also reserved a block of room in the <a href="http://www.marriott.com/hotels/travel/bosfn-residence-inn-boston-back-bay-fenway/">Marriot Residence Inn at Fenway</a> which is located right across from Fenway Park and only about 15 min on foot from the conference venue.
+	The room rate is $319.00 per night plus 14.45% tax. It comes with full hot breakfast buffet.  Book using <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Harvard%20Smithsonian%20Center%20for%20Astrophysics%5EBOSFN%60SMISMIA%60319.00%60USD%60false%602%607/29/18%608/4/18%606/29/18&app=resvlink&stop_mobi=yes">this
+	link</a> (valid until all rooms are reserved, but no later than June 29). Please contact <a href="mailto:jhumber@cfa.harvard.edu">Jenine
+	Humber (jhumber@cfa.harvard.edu)</a> with any problems.</p>
+
+	
+	<h3>Other hotels and Accommodations</h3>
+	<p>
+	  The conference venue is only a few minutes walk from the famous baseball stadium "Fenway Park". Several other hotels are available in this area and can be found with any search engine or travel agency.  More affordable options should also be available via websites such as <a href="https://www.airbnb.com/">Airbnb</a> (We do not endorse any particular option. Links are provided as example only.).
+	  </p>
+      </div>
+      <h2><span>Visa Information for International Participants</span></h2>
+	
+	<p>International visitors who present an oral talk, poster, or an exhibit
+	  and whose country does not participate in the U.S. Visa Waiver Program
+	  may request a letter of participation from
+	  <a href="mailto:cs20@cfa.harvard.edu?subject=letter of participation" target="_top">cs20@cfa.harvard.edu</a>
+	  for a B1 Visa
+	  for Business in a timely manner. When requesting a
+	  letter of participation, please provide presentation information and
+	  full contact information (telephone and mailing address).</p>
+	
+	<p>Others who do not meet the above criteria but need a visa for entry
+	  may apply for the same Visitor Visa except it will be for the Visa for
+	  Tourism-Pleasure (B2 Visa). No support letter from CS20 is
+	  required.</p>
+	
+	<p>For more information and guidance regarding the Visitor Visa program,
+	please read: <a href="https://travel.state.gov/content/visas/en/general/all-visa-categories.html">Directory
+	of Visa Categories</a>.</p>
+	      
+    </div>
+
+{% endblock content %}
