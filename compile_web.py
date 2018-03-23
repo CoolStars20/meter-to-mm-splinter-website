@@ -8,7 +8,7 @@ import shutil
 
 
 outpath = 'site'
-verbatim_dirs = 'css fonts icons js'.split()
+verbatim_dirs = 'css fonts icons img js'.split()
 env = Environment(
     loader = FileSystemLoader(['.']),
     autoescape = select_autoescape(['html'])
