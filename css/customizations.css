@@ -1,0 +1,21 @@
+a { color: #c95c50; text-decoration: none; }
+a:hover, a:focus { color: #c95c50; text-decoration: underline; outline: none; }
+
+.top-bar { background-color: #dc932c; height: 30px; }
+.top-bar p, .top-bar a { color: white; line-height: 30px; }
+
+.navbar { position: relative; min-height: 80px; margin-bottom: 20px; background: #FFF; border-color: #FFF; }
+.navbar-brand { float: left; padding: 0px 0px 50px 50px; margin: 15px 5px 0 15px; background: url('../icons/sprites.png') 0 0 no-repeat; }
+.navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
+.navbar-inverse .navbar-nav > li > a { color: #333; text-shadow: 1px 1px rgba(255,255,255,0.75); line-height: 60px; }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
+  .navbar-inverse .navbar-nav > li > a.active { color: #fff; background-color: #dc932c; text-shadow: 1px 1px rgba(201,92,80,0.75); }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus { color: #ffffff; background-color: #080808; }
+.navbar-nav {float: right; margin: 0;}
+
+h2 { font-size: 1.25em; margin: 20px 0; padding-right: 20px; color: #dc932c; font-weight: 400; }
+h3 { color:#dc932c; font-weight:400; }
+
+.footer { font-size:0.9em; padding-top: 5px; background-color: #DC932C; overflow: hidden; }
+.footer p, .footer a { margin: 0; color: white; }

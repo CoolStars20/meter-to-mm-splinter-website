@@ -10,19 +10,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Cool Stars 20, splinter session">
     <meta name="author" content="Peter Williams &amp; Jan Forbrich">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700">
+
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
     <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
@@ -40,12 +33,20 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/customizations.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
   </head>
 
   <body>
-    <a class="sr-only" href="#content">Skip to main content</a>
+    <a class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
 
     <div class="top-bar">
       <div class="container">
@@ -77,5 +78,8 @@
         <p>&copy; 2018 <a href="mailto:pwilliams@cfa.harvard.edu" target="_top">Peter Williams &amp; Jan Forbrich</a></p>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
