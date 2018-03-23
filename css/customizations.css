@@ -5,7 +5,7 @@ a:hover, a:focus { color: #c95c50; text-decoration: underline; outline: none; }
 .top-bar p, .top-bar a { color: white; line-height: 30px; }
 
 .navbar { position: relative; min-height: 80px; margin-bottom: 20px; background: #FFF; border-color: #FFF; }
-.navbar-brand { float: left; padding: 0px 0px 50px 50px; margin: 15px 5px 0 15px; background: url('../icons/sprites.png') 0 0 no-repeat; }
+.navbar > .container .navbar-brand { padding: 0px 0px 50px 50px; margin-left: 0px; background: url('../icons/sprites.png') 0 0 no-repeat; }
 .navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
 .navbar-inverse .navbar-nav > li > a { color: #333; text-shadow: 1px 1px rgba(255,255,255,0.75); line-height: 60px; }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
