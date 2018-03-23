@@ -14,7 +14,9 @@ a:hover, a:focus { color: #c95c50; text-decoration: underline; outline: none; }
   .navbar-inverse .navbar-nav > .active > a:focus { color: #ffffff; background-color: #080808; }
 .navbar-nav {float: right; margin: 0;}
 
+h1 { color: #dc932c; }
 h2 { font-size: 1.25em; margin: 20px 0; padding-right: 20px; color: #dc932c; font-weight: 400; }
+h2.my-subtitle { font-size: 1.5em; margin-top: 0px; }
 h3 { color:#dc932c; font-weight:400; }
 
 .footer { font-size:0.9em; padding-top: 5px; background-color: #DC932C; overflow: hidden; }
