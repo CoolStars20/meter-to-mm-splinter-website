@@ -4,11 +4,11 @@ a:hover, a:focus { color: #c95c50; text-decoration: underline; outline: none; }
 .top-bar { background-color: #dc932c; height: 30px; }
 .top-bar p, .top-bar a { color: white; line-height: 30px; }
 
-
-.navbar { position: absolute; min-height: 80px; margin-top: 30px; margin-bottom: 20px; background: rgba(255,255,255,0.6); border: none; }
-.navbar > .container .navbar-brand { padding: 0px 0px 50px 50px; margin-left: 0px; background: url('../icons/sprites.png') 0 0 no-repeat; }
+.navbar { position: absolute; min-height: 80px; margin-top: 30px; margin-bottom: 20px; background: none; border: none; }
+.navbar > .container { background: rgba(255,255,255,0.6); }
+.navbar > .container .navbar-brand { padding: 0px 0px 50px 50px; margin-top: -5px; margin-left: 0px; background: url('../icons/sprites.png') 0 0 no-repeat; }
 .navbar-brand:hover, .navbar-brand:focus { text-decoration: none; }
-.navbar-inverse .navbar-nav > li > a { color: #333; text-shadow: 1px 1px rgba(255,255,255,0.75); line-height: 60px; }
+.navbar-inverse .navbar-nav > li > a { color: #333; text-shadow: 1px 1px rgba(255,255,255,0.75); line-height: 50px; }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
   .navbar-inverse .navbar-nav > li > a.active { color: #fff; background-color: #dc932c; text-shadow: 1px 1px rgba(201,92,80,0.75); }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover,
