@@ -27,3 +27,6 @@ h3 { color:#dc932c; font-weight:400; }
 
 .submission-div { border-radius: 8px; margin-top: 10px; margin-bottom: 30px; }
 .submission-div h2 { color: #000; font-weight: 800; }
+
+.speakers dt { width: 240px; margin-bottom: 20px; font-weight: 400; }
+.speakers dd { margin-left: 260px }
