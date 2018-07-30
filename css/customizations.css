@@ -30,3 +30,8 @@ h3 { color:#dc932c; font-weight:400; }
 
 .speakers dt { width: 240px; margin-bottom: 20px; font-weight: 400; }
 .speakers dd { margin-left: 260px }
+
+.sched { font-size: 1.2em; margin-left: 10%; margin-right: 10%; }
+.sched td { padding-left: 20px; padding-right: 20px; }
+.sched .name { font-weight: 800; width: 240px; }
+.sched .title { font-style: italic; }
